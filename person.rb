@@ -3,7 +3,7 @@ require './decorator'
 # Blueprint for a person object
 class Person
   include Decorator
-  def initialize(age, name = 'Unknown', parent_permission = true)
+  def initialize(age, name = 'Unknown', parent_permission: true)
     @id = rand(1..1000)
     @age = age
     @name = correct_name(name)
