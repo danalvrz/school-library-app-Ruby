@@ -5,6 +5,7 @@ require './trimmer'
 # Blueprint for a person object
 class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = rand(1..1000)
     @age = age
     @name = name

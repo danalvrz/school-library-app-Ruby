@@ -1,5 +1,4 @@
 # Pattern to normalize name input
-
 module Decorator
   def correct_name(name)
     trimmer(capitalizer(name))
