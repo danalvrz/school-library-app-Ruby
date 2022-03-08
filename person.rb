@@ -1,6 +1,11 @@
+require './nameable'
+require './capitalizer'
+require './trimmer'
+
 # Blueprint for a person object
-class Person
+class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = rand(1..1000)
     @age = age
     @name = name
@@ -14,6 +19,10 @@ class Person
     return true if of_age? || @parent_permission == true
 
     false
+  end
+
+  def correct_name
+    @name
   end
 
   private
