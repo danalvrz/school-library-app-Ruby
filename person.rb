@@ -11,7 +11,7 @@ class Person
   attr_accessor :name, :age
 
   def can_use_services?
-    return true if is_of_age? || @parent_permission == true
+    return true if of_age? || @parent_permission == true
 
     false
   end
