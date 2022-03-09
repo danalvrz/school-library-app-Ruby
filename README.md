@@ -1,7 +1,5 @@
 # school-library-app-Ruby
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## own_enumerable
 This is a simple data management system for a school library. It was built using ruby.
 
 ## Built With
