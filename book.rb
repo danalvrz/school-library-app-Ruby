@@ -1,3 +1,5 @@
+require './rental'
+
 # Book object template
 class Book
   def initialize(title, author)
