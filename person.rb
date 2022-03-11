@@ -5,7 +5,8 @@ require './rental'
 class Person
   include Decorator
 
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  # rubocop:disable Style/OptionalBooleanParameter
+  def initialize(age, name = 'Unknown', parent_permission = true)
     super()
     @id = rand(1..1000)
     @age = age
@@ -13,9 +14,10 @@ class Person
     @parent_permission = parent_permission
     @rentals = []
   end
+  # rubocop:enable Style/OptionalBooleanParameter
 
   attr_reader :id
-  attr_accessor :name, :age, :rentals
+  attr_accessor :name, :age, :rentals, :parent_permission
 
   def can_use_services?
     return true if of_age? || @parent_permission == true
