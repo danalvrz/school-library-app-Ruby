@@ -6,7 +6,6 @@ require './rental'
 # Menu blueprint
 # rubocop:disable Metrics/CyclomaticComplexity
 # rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/AbcSize
 class Menu
   def initialize
     @user_choice = 0
@@ -159,7 +158,6 @@ class App < Menu
 
   # rubocop:enable Metrics/CyclomaticComplexity
   # rubocop:enable Metrics/MethodLength
-  # rubocop:enable Metrics/AbcSize
   def run
     menu
   end
