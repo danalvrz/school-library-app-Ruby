@@ -5,6 +5,7 @@ require './rental'
 class Person
   include Decorator
 
+  # rubocop:disable Style/OptionalBooleanParameter
   def initialize(age, name = 'Unknown', parent_permission = true)
     super()
     @id = rand(1..1000)
@@ -13,6 +14,7 @@ class Person
     @parent_permission = parent_permission
     @rentals = []
   end
+  # rubocop:enable Style/OptionalBooleanParameter
 
   attr_reader :id
   attr_accessor :name, :age, :rentals, :parent_permission
