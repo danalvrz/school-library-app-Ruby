@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './base_decorator'
 # Capitalizer blueprint
 class Capitalizer < Decorator

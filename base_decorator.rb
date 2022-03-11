@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './nameable'
 # Blueprint to normalize name input
 class Decorator < Nameable

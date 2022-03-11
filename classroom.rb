@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Blueprint for classroom object
 class Classroom
   def initialize(label)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Pattern to normalize name input
 module Decorator
   def decorated_name(name)

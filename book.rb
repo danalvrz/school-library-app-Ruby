@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './rental'
 
 # Book object template

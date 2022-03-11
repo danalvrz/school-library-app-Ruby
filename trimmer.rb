@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './base_decorator'
 # Trimmer blueprint to shorten string
 class Trimmer < Decorator

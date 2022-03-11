@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './decorator'
 require './rental'
 
@@ -5,7 +7,7 @@ require './rental'
 class Person
   include Decorator
 
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(age, name = 'Unknown', parent_permission = true)
     super()
     @id = rand(1..1000)
     @age = age
@@ -15,7 +17,7 @@ class Person
   end
 
   attr_reader :id
-  attr_accessor :name, :age, :rentals
+  attr_accessor :name, :age, :rentals, :parent_permission
 
   def can_use_services?
     return true if of_age? || @parent_permission == true

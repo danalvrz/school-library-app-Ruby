@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 require './person'
 
 # Blueprint for a student object based on Person class
 class Student < Person
-  def initialize(*args, classroom)
+  def initialize(classroom = '', *args)
     super(*args)
     @classroom = classroom
-    update_classroom(@classroom)
   end
 
   attr_accessor :classroom
