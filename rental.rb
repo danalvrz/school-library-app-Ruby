@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Bluepprint for rental object
 class Rental
   def initialize(book, person, date)

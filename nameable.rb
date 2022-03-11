@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Nameable blueprint
 class Nameable
   def correct_name
